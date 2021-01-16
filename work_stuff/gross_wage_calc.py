@@ -1,8 +1,8 @@
 #wage
-name1_wage = <>
-name2_wage = <>
-name3_wage = <>
-name4_wage = <>
+name1_wage = 0
+name2_wage = 0
+name3_wage = 0
+name4_wage = 9
 
 #overtime wage
 name1_ot = (name1_wage/2) + name1_wage
@@ -44,7 +44,18 @@ def main():
 
 
 
-    print("Total Amount: ", (name1 +  name2 +  name3 + name4))
+     
+    totalGross = name1 + name2 +  name3 + name4
+    print("Total Gross Amount: ", totalGross)
+
+    FUTA_ER = .006 * totalGross
+    MED_ER = .0145 * totalGross
+    SOC_SEC_ER = .062 * totalGross
+    OHIO_SUI_ER = .027 * totalGross
+    
+    grandTotal = totalGross + FUTA_ER + MED_ER + SOC_SEC_ER + OHIO_SUI_ER
+    print("Total amount: ", grandTotal)
+
 
 
 

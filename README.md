@@ -1,2 +1,2 @@
 # Sandbox2
-stuff written in python
+Python sandbox

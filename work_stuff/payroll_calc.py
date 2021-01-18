@@ -2,7 +2,7 @@
 name1_wage = 0
 name2_wage = 0
 name3_wage = 0
-name4_wage = 9
+name4_wage = 0
 
 #overtime wage
 name1_ot = (name1_wage/2) + name1_wage
